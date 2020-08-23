@@ -66,8 +66,8 @@ Note：
 We put two pretrained models together and save only one pkl file in detectron2's format for MGD training.
 
 These two pretrained models are: 
-* the model of RetinaNet-R50 produced by the [step-2 of base training](#2-train-retinanet). It's model id is 9db3bf173. It can be downloaded from the above results table.
-* the pretrained model of ResNet-18 from torchvision, please follow the [step-1 of base training](#1-convert-torchvision-pretrained-model-to-detectron2) to download and convert it into `r-18.pkl`.
+* RetinaNet-R50 model produced by the [step-2 of base training](#2-train-retinanet). Its model id is 9db3bf173. It can be downloaded from the above results table.
+* ResNet-18 model from torchvision, please follow the [step-1 of base training](#1-convert-torchvision-pretrained-model-to-detectron2) to download and convert it into `r-18.pkl`.
 
 To merge teacher `model_9db3bf173.pth` and student `r-18.pkl` into one file `T50-S18.pkl`, run
 
@@ -180,7 +180,7 @@ This is why we set `cfg.MODEL.BACKBONE.FREEZE_AT = 1` [here](mgd/config.py#L15) 
 
 We enable norm layers to be trained in the last block of each stage in resnet backbone for student.
 Since we use the feature maps before ReLU to distill student and calculate the [loss margins](../mgd/builder.py#L87-L94) using the affine parameters of teacher norm layers,
-we want to let student not only learns good feature maps from teacher, but also needs to learn the good batched statistics and affine parameters from teacher norm layers.
+we want to let student not only learns better feature maps from teacher, but also needs to learn the better batched statistics and affine parameters from teacher norm layers.
 
 In default [setting](mgd/config.py#L28), we use `torch.nn.GroupNorm` for MGD training due to the small batch size. 
 If one would like to use Sync version norm layer, please set `cfg.MGD.SYNC_BN = True`.
