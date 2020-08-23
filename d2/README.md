@@ -175,6 +175,13 @@ The above figure demonstrates distillation positions for the detection model wit
 In FPN, the intermediate output features have their own specific names, as shown in figure, which are `C2, C3, C4, C5` in bottom-up pathway and `P5, P4, P3` in top-down pathway.
 Under the same experimental setting with classification task, we use `C2, C3, C4, C5` from the resnet backbone.
 This is why we set `cfg.MODEL.BACKBONE.FREEZE_AT = 1` [here](mgd/config.py#L15) for student model.
+Using default value may produce worse results.
+Here is the comparison.
+
+| **model** | **method** | **FREEZE_AT** | **cfg.MGD.IGNORE_INDS** | **AP** |
+|:---:|:---:|:---:|:---|:---:|
+| RetinaNet-R18 | [MGD - AMP](mgd/config.py) | 1 | [4, 5, 6, 7, 8]    | 32.47 |
+|               |                            | 2 | [0, 4, 5, 6, 7, 8] | 32.28 |
 
 #### 2. Norm Layers
 
