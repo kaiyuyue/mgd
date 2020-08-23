@@ -1,0 +1,12 @@
+_BASE_: "../Base-RetinaNet.yaml"
+MODEL:
+  WEIGHTS: "See Instructions"
+  PIXEL_MEAN: [123.675, 116.280, 103.530]
+  PIXEL_STD: [58.395, 57.120, 57.375]
+  RESNETS:
+    DEPTH: 50
+    STRIDE_IN_1X1: False
+INPUT:
+  FORMAT: "RGB"
+TEST:
+  EVAL_PERIOD: 5000

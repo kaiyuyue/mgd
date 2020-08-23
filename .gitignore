@@ -1,0 +1,39 @@
+# files
+*.jpg
+*.png
+*.txt
+*.json
+*.diff
+
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.pyd
+*.so
+
+# pytorch/python/numpy formats
+*.pth
+*.pkl
+*.npy
+
+# ipython/jupyter notebooks
+*.ipynb
+**/.ipynb_checkpoints/
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# editor settings
+.idea
+.vscode
+
+# output dirs
+/ckpt
+d2/datasets
+d2/detectron2
+d2/mgd/mgd.py
+d2/output
