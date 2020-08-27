@@ -202,7 +202,7 @@ python main_mgd.py \
 
 See [./d2](./d2).
 
-## Acknowledgement
+## Acknowledgements
 
 We learn and use some part of codes from following projects. We thank these excellent works:
 
