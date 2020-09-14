@@ -127,8 +127,8 @@ for out in $(ls $OUTPUT_DIR); do
         new="${out/pth/pkl}"
         echo $old "->" $new
         python scripts/convert-output-to-d2.py \
-            ./output/$old \
-            ./output/$new \
+            ${OUTPUT_DIR}/$old \
+            ${OUTPUT_DIR}/$new \
             # --eval-teacher # uncomment this line if you would like to check teacher performance
     fi
 done
