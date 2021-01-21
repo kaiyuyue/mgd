@@ -97,14 +97,14 @@ d_net = mgd.builder.MGDistiller(
 
 ```python
 # init mgd params in the first start
-mgd_update(train_loader, model)
+mgd_update(train_loader, d_net)
 
 # training loop
 for epoch in range(total_epochs):
 
     # UPDATE_FREQ can be set by yourself
     if (epoch+1)%UPDATE_FREQ == 0:
-        mgd_update(train_loader, model)
+        mgd_update(train_loader, d_net)
 ```
 
 ## MGD In Tasks
