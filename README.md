@@ -11,6 +11,17 @@ MGD for object detection is also re-implemented in [Detectron2](https://github.c
 
 Note: **T** : teacher feature tensors. **S** : student feature tensors. *dp* : distance function for distillation. *Ci*: i-th channel.
 
+## BibTex
+
+```
+@inproceedings{eccv20mgd,
+    title={Matching Guided Distillation},
+    author={Yue, Kaiyu and Deng, Jiangfan and Zhou, Feng},
+    booktitle={ECCV},
+    year={2020}
+}
+```
+
 ## Quick & Easy Start
 
 We take using ResNet-50 to distill ResNet-18 as an example, as shown in the below figure.
