@@ -263,7 +263,7 @@ class MGDistiller(nn.Module):
         t = t.reshape(b, sc, groups, -1)
         m = m.reshape(1, sc, groups, -1)
 
-        t_inds = torch.argmax(t, dim=2)
+        t_inds = torch.argmax(torch.abs(t), dim=2)
 
         t = t.gather(2, t_inds.unsqueeze(2))
         m = m.mean(dim=2)
