@@ -22,6 +22,12 @@ Note: **T** : teacher feature tensors. **S** : student feature tensors. *dp* : d
 }
 ```
 
+## Software Version Used for Paper
+
+- Python - 3.7
+- PyTorch - 1.5.0 with torchvision - 0.6.0
+- Detectron2 Tree - [369a57d333](https://github.com/facebookresearch/detectron2/tree/369a57d333ff9c05c9dd42ab3c3d8156860dc710)
+
 ## Quick & Easy Start
 
 We take using ResNet-50 to distill ResNet-18 as an example, as shown in the below figure.
