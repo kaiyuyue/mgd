@@ -9,6 +9,7 @@ The improvement margin brought by MGD here is slightly larger than that in paper
 
 ## Instruction
 
+* Detectron2 Tree - [369a57d333](https://github.com/facebookresearch/detectron2/tree/369a57d333ff9c05c9dd42ab3c3d8156860dc710) was used for this paper.
 * Install [Detectron2](https://github.com/facebookresearch/detectron2/blob/master/INSTALL.md) in this directory `./detectron2`
 
 ## Base Training
