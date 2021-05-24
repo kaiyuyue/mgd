@@ -13,7 +13,7 @@ Note: **T** : teacher feature tensors. **S** : student feature tensors. *dp* : d
 
 ## BibTex
 
-```
+```BibTeX
 @inproceedings{eccv20mgd,
     title     = {Matching Guided Distillation},
     author    = {Yue, Kaiyu and Deng, Jiangfan and Zhou, Feng},
