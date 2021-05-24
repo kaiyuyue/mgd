@@ -17,7 +17,7 @@ Note: **T** : teacher feature tensors. **S** : student feature tensors. *dp* : d
 @inproceedings{eccv20mgd,
     title     = {Matching Guided Distillation},
     author    = {Yue, Kaiyu and Deng, Jiangfan and Zhou, Feng},
-    booktitle = {ECCV},
+    booktitle = {European Conference on Computer Vision (ECCV)},
     year      = {2020}
 }
 ```
