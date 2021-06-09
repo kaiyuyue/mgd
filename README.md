@@ -1,7 +1,7 @@
 Matching Guided Distillation
 ===
 
-> [**Project Webpage**](http://kaiyuyue.com/mgd) | [**Paper**](https://arxiv.org/abs/2008.09958)
+> [**Project Webpage**](http://kaiyuyue.com/mgd) | [**Paper**](https://arxiv.org/abs/2008.09958) | [**Zhihu Blog [知乎]**](https://zhuanlan.zhihu.com/p/379219502)
 
 This implementation is based on [the official PyTorch ImageNet training code](https://github.com/pytorch/examples/tree/master/imagenet), 
 which supports two training modes [DataParallel](https://pytorch.org/docs/stable/generated/torch.nn.DataParallel.html#torch.nn.DataParallel) (DP) and [DistributedDataParallel](https://pytorch.org/docs/stable/distributed.html) (DDP).
