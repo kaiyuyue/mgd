@@ -26,6 +26,7 @@ _ext
 *.swo
 *.swp
 *~
+*.DS_Store
 
 # editor settings
 .idea
