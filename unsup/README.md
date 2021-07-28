@@ -75,8 +75,8 @@ python main_moco_mgd.py \
 **Note**: 
 
 - The MGD distiller is engined by the AMP -- absolute max pooling.
-- The teacher is ResNet-50 [in deafult](https://github.com/KaiyuYue/mgd/blob/main/unsup/main_moco_mgd.py#L178).
-- The hyper-parameters of MGD, such as loss factors, are the same as supervised training. We did not search hyper-parameters. But according to training logs, we believe performances can be better with tunning hyper-parameters, for example, increasing the [factor](https://github.com/KaiyuYue/mgd/blob/main/unsup/main_moco_mgd.py#L363) from `1e4` to `1e2`.
+- The teacher is ResNet-50 [in deafult](https://github.com/KaiyuYue/mgd/blob/master/unsup/main_moco_mgd.py#L178).
+- The hyper-parameters of MGD, such as loss factors, are the same as supervised training. We did not search hyper-parameters. But according to training logs, we believe performances can be better with tunning hyper-parameters, for example, increasing the [factor](https://github.com/KaiyuYue/mgd/blob/master/unsup/main_moco_mgd.py#L363) from `1e4` to `1e2`.
 
 
 ## Linear Classification
