@@ -5,7 +5,7 @@ Matching Guided Distillation
 
 ## Updates
 
-- MGD in Unsupervised Training. See [./unsup](./unsup).
+- July 28, 2021. [**MGD in Unsupervised Training**](./unsup).
 
 ## Introduction
 
