@@ -5,7 +5,7 @@ Matching Guided Distillation
 
 ## Updates
 
-- July 28, 2021. [**MGD in Unsupervised Training**](./unsup).
+- July 28, 2021. [**MGD in Unsupervised Learning**](./unsup).
 
 ## Introduction
 
@@ -132,7 +132,7 @@ for epoch in range(total_epochs):
 
 ## MGD In Tasks
 
-[Classification](./cls) | [Object Detecton](./d2) | [Unsupervised Training](./unsup).
+[Classification](./cls) | [Object Detecton](./d2) | [Unsupervised Learning](./unsup).
 
 ## Acknowledgements
 
